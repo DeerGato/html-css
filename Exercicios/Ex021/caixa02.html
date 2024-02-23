@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: beige;
+        }
+        header {
+            background-color: burlywood;
+            width: 100%;
+            margin: 0;
+            padding: 3px;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(216, 155, 76);
+            text-align: left;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 45px 10px 10px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.425);
+        }
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+         nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            margin-top: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.425);
+        }
+        article {
+            background-color: bisque;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: cornsilk;
+            font-size: 0.8em;
+            text-align: right;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Outros assuntos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet temporibus molestiae eaque at, veritatis ab? Exercitationem, illo. Aliquid nihil molestias saepe ab ducimus laborum reprehenderit sunt dolor autem pariatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et incidunt deleniti est mollitia alias ratione vero officia aliquid ullam, ipsum consequuntur inventore dolorem quod rem ea blanditiis earum quos harum.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam provident cum deserunt aspernatur eaque aut beatae voluptas incidunt nam deleniti voluptatem nisi, ducimus, est modi illum adipisci laborum architecto.</p>
+                <aside>
+                    Escrito por Kushai.
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por LPerez</p>
+    </footer>
+</body>
+</html>
