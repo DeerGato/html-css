@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body{
+    background-image: url(imagens/wallpaper001.jpg);
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
 
 div.quadrado {
     display: inline-block;
@@ -8,4 +13,18 @@ div.quadrado {
     background-color: blanchedalmond;
     width: 300px;
     height: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+    margin-right: 10px;
+}
+
+div#q1 {
+    background-color: aquamarine;
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, purple, blue, transparent);
+}
+
+div#q3 {
+    background-image: url(imagens/pattern003.png);
 }
