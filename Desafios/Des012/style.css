@@ -66,28 +66,26 @@ section.normal {
 section.imgfundo {
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.534);
+    background-size: cover;
 }
 
-section.imgfundo > p {
+section.imgfundo  p {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.582), transparent 70% );
     border-radius: 10px;
-    padding: 10px;
-    margin: -20px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.63);
 }
 
  section p {
     padding-bottom: 2em;
+    padding: 10px;
 }
 
 section#img01 {
     background: url(imagens/background001.jpg) right center fixed;
-    background-size: cover;
 }
 
 section#img02 {
     background: url(imagens/background002.jpg) right center fixed;
-    background-size: cover;
 }
 
 footer {
