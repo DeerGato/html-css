@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output em formulários</title>
+</head>
+<body>
+    <h1>
+        Elemento Output em formulários Html
+    </h1>
+
+    <form action="#" method="get">
+        <fieldset>
+            <p>
+                <label for="in1">Número 1:</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Número 2:</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Usando output com range</legend>
+            <label for="irange1">Número:</label>
+            <input type="range" name="irange" id="irange1" min="0" max="10" value="5" list="markers"
+            oninput="nrange.innerHTML = Number(irange.value)">
+            <datalist id="markers">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            <output id="nrange">5</output>
+        </fieldset>
+
+        <fieldset>
+            <legend>Idade</legend>
+            <p>
+                <label for="nasc">Em que ano voçe nasceu?</label>
+                <input type="number" name="nasc" id="inasc" min="1900" max="2023"
+                oninput="calcidade()">
+            </p>
+
+            <p>
+                <label for="Idade">Sua idade é:</label>
+                <output id="iidade">-</output>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(inasc.value)
+        } 
+    </script>
+</body>
+</html>

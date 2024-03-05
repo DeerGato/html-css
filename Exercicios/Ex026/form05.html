@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>
+        Elementos que não utilizam a tag &lt;input&gt;
+    </h1>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <h2>
+                Tag select:
+            </h2>
+            <p>
+                <label for="estado">Selecione seu estado:</label>
+                <select name="estado" id="estado">
+                        <option value="" selected>--</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <h2>
+                Datalist
+            </h2>
+
+            <p>
+                <label for="profissao">Profissão:</label>
+                <input type="list" name="profissao" id="profissao" list="listprof">
+                <datalist id="listprof">
+                    <option value="adm">Administração</option>
+                    <option value="cont">Contabilista</option>
+                    <option value="prog">Desenvolvedor</option>
+                    <option value="prof">Professor</option>
+                </datalist>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <h2>
+                Textarea
+            </h2>
+
+            <p>
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="msg" cols="50" rows="5"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>

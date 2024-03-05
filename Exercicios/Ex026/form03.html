@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
@@ -23,11 +23,40 @@
             <input type="month" name="mes" id="imes" value="2024-03">
         </p>
 
+        <fieldset>
+            <legend>Data</legend>
+            <p>
+                <label for="idia">data</label>
+                <input type="date" name="dia" id="idia" value="2024-07-03">
+                <label for="ihora">Hora:</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+        </fieldset>
+
         <p>
-            <label for="idia">data</label>
-            <input type="date" name="dia" id="idia" value="2024-07-03">
-            <input type="time" name="hora" id="ihora">
+            <label for="imail">E-mail:</label>
+            <input type="email" name="email" id="imail">
+            <label for="ifone">Telefone:</label>
+            <input type="tel" name="Telefone" id="ifone" autocomplete="tel">
         </p>
+
+        <fieldset>
+            <legend>Semestre</legend>
+            <p>
+                <input type="checkbox" name="Primeira" id="ifirst"> <label for="ifirst">Primeiro semestre</label> <br>
+                <input type="checkbox" name="Primeira" id="isecond"> <label for="isecond">Segundo semestre</label> <br>
+                <input type="checkbox" name="Primeira" id="ithird"> <label for="ithird">Terceiro semestre</label> <br>
+                <input type="checkbox" name="Primeira" id="ifourth"> <label for="ifourth">Quarto semestre</label> <br>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasculino" value="M">
+            <label for="imasculino">Masculino</label>
+            <input type="radio" name="sexo" id="ifeminino" value="F">
+            <label for="ifeminino">Feminino</label>
+        </fieldset>
 
         <p>
             <input type="submit" value="Enviar">
