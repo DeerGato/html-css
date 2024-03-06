@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media features</title>
+    <style>
+    /* configurações gerais*/
+    * {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background: #233eff;
+    }
+
+    h1 {
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+
+    /*Aparelho em pé (portrait)*/
+
+    @media screen and (orientation: portrait) {
+        body {
+            background: url(../imagens/cev-portrait.jpg) no-repeat center bottom;
+            background-size: contain;
+        }
+    }
+
+    /*Aparelho deitado (landscape)*/
+
+    @media screen and (orientation: landscape) {
+        body {
+            background: url(../imagens/cev-landscape.jpg) no-repeat left bottom;
+            background-size: contain;
+        }        
+    }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Mude a orientação do seu dispositivo.
+    </h1>
+</body>
+</html>
